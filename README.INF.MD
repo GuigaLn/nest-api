@@ -57,3 +57,10 @@ Decorator para módulos:
 Decorator para injeção de dependência:
 
     @Injectable()
+
+
+# Pipes
+Vai ficar no meio do caminho entre o cliente e a rota. Servem para duas coisas, para transformar e validar os dados. Exemplo.: Se foi me fornecido e-mail e senha.
+
+    Request -> Pipes -> Controller.create -> Service.create
+    Request -> Pipes = False = BadRequest

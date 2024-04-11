@@ -26,8 +26,8 @@ model Usuario {
   email         String   @unique
   senha         String
   role          RoleType @default(USER)
-  dataCompra    DateTime @map("data_compra")
-  dataExpiracao DateTime @map("data_expiracao")
+  dataCompra    DateTime @default(now()) @map("data_compra")
+  dataExpiracao DateTime @default(now()) @map("data_expiracao")
 
   @@map("usuarios")
 }
